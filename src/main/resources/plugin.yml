@@ -1,0 +1,7 @@
+name: KotlinLoader
+main: KotlinLoader
+author: Legend Arena
+authors: ["Kotlin's Developers"]
+version: 1.0
+description: Loader for Kotlin.
+load: STARTUP
