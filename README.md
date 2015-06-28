@@ -1,4 +1,4 @@
-Kotlin Loader
+Kotlin Loader [![Build Status](https://snap-ci.com/LegendArenaMC/Kotlin-Loader/branch/master/build_image)](https://snap-ci.com/LegendArenaMC/Kotlin-Loader/branch/master)
 ====
 
 Kotlin loader. Contains Kotlin runtime class files so that any Bukkit plugin that uses Kotin loads successfully.
