@@ -15,11 +15,8 @@ Getting a Jar
 To get a jar with the Kotlin runtime, run the following commands in the repository root:
 
 ```
-$ unzip kotlin-runtime.zip
-$ gradle build shadowJar
+$ gradle build
 ```
-
-The finished jar is in build/libs with a name similar to `Kotlin-Loader-all.jar`.
 
 Usage
 ====

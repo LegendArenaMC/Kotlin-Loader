@@ -73,6 +73,7 @@ gradle-app.setting
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
 
-### Kotlin
+### Build
 
-src/main/java/kotlin
+kotlinc/
+SHADEME/
