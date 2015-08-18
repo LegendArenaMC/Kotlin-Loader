@@ -1,19 +1,27 @@
-apply plugin: 'kotlin'
-apply plugin: 'java'
-
 buildscript {
-    ext.kotlin_version = '0.10.195'
+    ext.kotlin_version = '0.12.613'
     repositories {
         mavenCentral()
         jcenter()
     }
     dependencies {
+	classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
+apply plugin: 'maven'
+apply plugin: 'kotlin'
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+shadowJar {
+    append('build/classes/main/KotlinLoader.class')
+    append('build/classes/main/kotlinloader/KotlinTest.class')
+    append('src/main/resources/plugin.yml')
+}
+
 compileJava.options.encoding = 'UTF-8' //gradle, pls. just, pls. #gradlepls
-javadoc.options.encoding = 'UTF-8' //srsly gradle pls
 
 repositories {
     mavenCentral()
@@ -28,7 +36,6 @@ repositories {
 dependencies {
     compile group: 'org.bukkit', name: 'bukkit', version: '1.8-R0.1-SNAPSHOT'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    testCompile 'junit:junit:4.8.2'
 }
 
 sourceSets {

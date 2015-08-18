@@ -1,9 +1,6 @@
-#fucking Bukkit
-
 name: KotlinLoader
 main: KotlinLoader
 author: Legend Arena
-authors: ["Kotlin's Developers"]
-version: 1.0
-description: Loader for Kotlin.
+version: 1.1
+description: Loader for Kotlin. (Kotlin is made by JetBrains)
 load: STARTUP

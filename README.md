@@ -1,6 +1,8 @@
 Kotlin Loader [![Build Status](https://snap-ci.com/LegendArenaMC/Kotlin-Loader/branch/master/build_image)](https://snap-ci.com/LegendArenaMC/Kotlin-Loader/branch/master)
 ====
 
+Warning: This plugin will not be updated for newer Kotlin versions. If you need a newer version than 0.12.613, use [LegendFrame](https://github.com/LegendArenaMC/LegendFrame).
+
 Kotlin loader. Contains Kotlin runtime class files so that any Bukkit plugin that uses Kotin loads successfully.
 
 Standard Disclaimer
